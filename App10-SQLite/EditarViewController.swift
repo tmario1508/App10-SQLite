@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class EditarViewController: UIViewController {
 
+    var p: Persona?
     override func viewDidLoad() {
         super.viewDidLoad()
 

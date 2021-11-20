@@ -9,6 +9,30 @@ import UIKit
 
 class AltaViewController: UIViewController {
 
+    @IBOutlet weak var Validador: UIView!
+    
+    @IBOutlet weak var txtNombre: CustomTextField!
+    
+    @IBOutlet weak var txtDomicilio: CustomTextField!
+    
+    @IBOutlet weak var txtRFC: UITextField!
+    
+    @IBOutlet weak var txtRepresentanteLe: UITextField!
+    
+    
+    @IBAction func OnCapturaInformacion(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onCancelar(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func onGuardar(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

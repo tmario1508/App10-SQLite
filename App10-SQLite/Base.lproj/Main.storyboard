@@ -77,6 +77,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnCapturaInformacion:" destination="xhh-hl-R3q" eventType="editingDidBegin" id="QQM-gm-ew1"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Domicilio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1p-Y9-QFm">
                                 <rect key="frame" x="66" y="280" width="70" height="21"/>
@@ -143,6 +146,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="onGuardar:" destination="xhh-hl-R3q" eventType="touchUpInside" id="FTR-aW-ZcX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vuz-ym-6At"/>
@@ -151,9 +157,23 @@
                     <navigationItem key="navigationItem" title="Alta" id="RTM-ye-4w9">
                         <barButtonItem key="leftBarButtonItem" title="Cancelar" id="2gT-Q7-Mvs">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="onCancelar:" destination="xhh-hl-R3q" id="94M-Ip-DFv"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="Eja-i0-OwZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Guardar" id="Eja-i0-OwZ">
+                            <connections>
+                                <action selector="onGuardar:" destination="xhh-hl-R3q" id="X6A-XZ-OxP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="Validador" destination="sO7-Er-GLV" id="KUP-sU-aaQ"/>
+                        <outlet property="txtDomicilio" destination="EiJ-Cp-rCH" id="bkG-RJ-wHX"/>
+                        <outlet property="txtNombre" destination="pFV-ZB-Om6" id="SgQ-gU-fOo"/>
+                        <outlet property="txtRFC" destination="AKe-H3-BTD" id="ojf-S7-EZt"/>
+                        <outlet property="txtRepresentanteLe" destination="jf3-b1-3Qx" id="S3N-fv-QmC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRt-AT-imq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
